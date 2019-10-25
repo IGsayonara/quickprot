@@ -1,0 +1,40 @@
+@import 'variables.scss';
+
+.text-blocks{
+    margin-top: 100px;
+    @media (max-width: 1200px) {
+        margin-top: 0;
+    }
+    p{
+        margin: 20px 0;
+    }
+    .container{
+        position: relative;
+        padding: 50px 0;
+    }
+    .flex-wrap{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        h3{
+            margin-bottom: auto;
+        }
+        p{
+            margin: 15px auto;
+        }
+    }
+    .rotated-text{
+        position: absolute;
+        right: calc(100% + 100px);
+        top: 0;
+        font-size: 30px;
+        color: $main-color;
+        writing-mode: vertical-rl; 
+        text-orientation: mixed;
+        transform: rotate(180deg);
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+}

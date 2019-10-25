@@ -1,0 +1,59 @@
+@import 'variables.scss';
+
+.video{
+    padding-top: 0;
+    margin-top: 100px;
+    background-image: linear-gradient(to right, white 60%, rgb(247, 247, 247) 60%);
+    @media (max-width: 1200px) {
+        padding-top: 100px;
+        margin-top: 0;
+        background-image: linear-gradient(to right, white 15px, rgb(247, 247, 247) 15px);
+    }
+    background-size: 100% 70%;
+    background-repeat: no-repeat;
+    h4{
+        img{
+            margin-top: 15px;
+        }
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        @media (max-width: 1200px) {
+            margin-top: 0px;
+        }
+        @media (max-width: 991px) {
+            margin-top: 50px;
+        }
+        margin-left: 30px;
+    }
+    .video-wrap{
+        width: 80%;
+        @media (max-width: 1200px) {
+            width: 100%;
+        }
+        margin: 50px auto 0;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 80%;
+            height: 90%;
+            background-color: $main-color;
+            top: 25%;
+            right: 30%;
+            z-index: -1;
+        }
+        iframe{
+            width: 100% !important;
+            height: 450px;
+            @media (max-width: 769px) {
+                height: 300px;
+            }
+            @media (max-width: 450px) {
+                height: 200px;
+            }
+            background-color: red;
+        }
+    }
+}

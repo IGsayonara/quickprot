@@ -1,0 +1,42 @@
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.box{
+    padding: 100px 0;
+}
+
+section{
+    z-index: 1;
+    //overflow-x: hidden;
+}
+
+.container{
+    width: 60% !important;
+    margin: auto;
+    @media (max-width: 1200px) {
+        width: calc(100% - 30px) !important;
+    }
+}
+
+.dn{
+    display: none !important;
+}
+
+h2{
+        
+    font-size: 40px;
+    padding: 10px 0;
+    font-family: 'sf_ui_display_bold';
+}
+
+h3{
+    font-size: 20px;
+}
+
+p{
+    font-family: 'sf_ui_display_light';
+    color: #7b858e;
+}
